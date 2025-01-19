@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sun Jan 19 13:49:46 2025
+# Process ID: 26120
+# Current directory: D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/final_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9644 D:\Kuliah\SEM_7\magang\TUGAS\FInalProject\final_project\final_project.xpr
+# Log file: D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/final_project/vivado.log
+# Journal file: D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/final_project\vivado.jou
+# Running On        :LAPTOP-O0TDC06K
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :13th Gen Intel(R) Core(TM) i5-13420H
+# CPU Frequency     :2611 MHz
+# CPU Physical cores:8
+# CPU Logical cores :12
+# Host memory       :16869 MB
+# Swap memory       :16106 MB
+# Total Virtual     :32975 MB
+# Available Virtual :13111 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/final_project/final_project.xpr
+update_compile_order -fileset sources_1
+update_files -from_files D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/final_project/final_project.srcs/sources_1/new/systolic6x6.v -to_files D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/systolic_6x6.v -filesets [get_filesets *]
+update_compile_order -fileset sources_1
+set_property is_enabled true [get_files  D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/final_project/final_project.srcs/sources_1/new/systolic6x6.v]
+update_compile_order -fileset sources_1

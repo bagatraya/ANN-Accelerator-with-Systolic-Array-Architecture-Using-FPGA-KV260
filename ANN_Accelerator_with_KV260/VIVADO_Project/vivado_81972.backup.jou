@@ -1,0 +1,112 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Wed Dec 18 08:28:48 2024
+# Process ID: 81972
+# Current directory: D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/final_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent75888 D:\Kuliah\SEM_7\magang\TUGAS\FInalProject\final_project\final_project.xpr
+# Log file: D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/final_project/vivado.log
+# Journal file: D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/final_project\vivado.jou
+# Running On        :LAPTOP-O0TDC06K
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :13th Gen Intel(R) Core(TM) i5-13420H
+# CPU Frequency     :2611 MHz
+# CPU Physical cores:8
+# CPU Logical cores :12
+# Host memory       :16869 MB
+# Swap memory       :13958 MB
+# Total Virtual     :30827 MB
+# Available Virtual :6969 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/final_project/final_project.xpr
+update_compile_order -fileset sources_1
+add_files {D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/final_project/final_project.srcs/sources_1/new/systolic1x1.v D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/final_project/final_project.srcs/sources_1/new/ann.v D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/final_project/final_project.srcs/sources_1/new/axis_ann.v D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/final_project/final_project.srcs/sources_1/new/systolic6x6.v D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/final_project/final_project.srcs/sources_1/new/sigmoid.v D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/final_project/final_project.srcs/sources_1/new/register.v D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/final_project/final_project.srcs/sources_1/new/pe.v D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/final_project/final_project.srcs/sources_1/new/systolic1x6.v}
+update_compile_order -fileset sources_1
+open_bd_design {D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/final_project/final_project.srcs/sources_1/bd/design_1/design_1.bd}
+update_files -from_files D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/final_project/final_project.srcs/sources_1/new/ann.v -to_files D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/ann.v -filesets [get_filesets *]
+update_compile_order -fileset sources_1
+update_files -from_files D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/final_project/final_project.srcs/sources_1/new/axis_ann.v -to_files D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/axis_ann.v -filesets [get_filesets *]
+update_compile_order -fileset sources_1
+update_files -from_files D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/final_project/final_project.srcs/sources_1/new/pe.v -to_files D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/pe.v -filesets [get_filesets *]
+update_compile_order -fileset sources_1
+update_files -from_files D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/final_project/final_project.srcs/sources_1/new/register.v -to_files D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/register.v -filesets [get_filesets *]
+update_compile_order -fileset sources_1
+update_files -from_files D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/final_project/final_project.srcs/sources_1/new/sigmoid.v -to_files D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/sigmoid.v -filesets [get_filesets *]
+update_compile_order -fileset sources_1
+update_files -from_files D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/final_project/final_project.srcs/sources_1/new/systolic1x1.v -to_files D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/systolic1x1.v -filesets [get_filesets *]
+update_compile_order -fileset sources_1
+update_files -from_files D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/final_project/final_project.srcs/sources_1/new/systolic1x6.v -to_files D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/systolic1x6.v -filesets [get_filesets *]
+update_compile_order -fileset sources_1
+update_files -from_files D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/final_project/final_project.srcs/sources_1/new/systolic6x6.v -to_files D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/systolic6x6.v -filesets [get_filesets *]
+update_compile_order -fileset sources_1
+update_files -from_files D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/final_project/final_project.srcs/sim_1/new/ann_tb.v -to_files D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/ann_tb.v -filesets [get_filesets *]
+update_files -from_files D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/final_project/final_project.srcs/sim_1/new/axis_ann_tb.v -to_files D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/axis_ann_tb.v -filesets [get_filesets *]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ann_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source ann_tb.tcl
+current_wave_config {Untitled 1}
+add_wave {{/ann_tb/dut/cnt_main_reg}} 
+current_wave_config {Untitled 1}
+add_wave {{/ann_tb/dut/k_enb}} 
+current_wave_config {Untitled 1}
+add_wave {{/ann_tb/dut/k_addrb}} 
+current_wave_config {Untitled 1}
+add_wave {{/ann_tb/dut/k_doutb}} 
+current_wave_config {Untitled 1}
+add_wave {{/ann_tb/dut/wb_enb}} 
+current_wave_config {Untitled 1}
+add_wave {{/ann_tb/dut/wb_addrb}} 
+current_wave_config {Untitled 1}
+add_wave {{/ann_tb/dut/wb_doutb}} 
+current_wave_config {Untitled 1}
+add_wave {{/ann_tb/dut/a1}} {{/ann_tb/dut/a2}} {{/ann_tb/dut/a3}} {{/ann_tb/dut/a4}} {{/ann_tb/dut/a5}} 
+current_wave_config {Untitled 1}
+add_wave {{/ann_tb/dut/a0}} 
+current_wave_config {Untitled 1}
+add_wave {{/ann_tb/dut/sig_out_valid}} 
+current_wave_config {Untitled 1}
+add_wave {{/ann_tb/dut/a_ena}} 
+current_wave_config {Untitled 1}
+add_wave {{/ann_tb/dut/a_wea}} 
+current_wave_config {Untitled 1}
+add_wave {{/ann_tb/dut/a_addra}} 
+current_wave_config {Untitled 1}
+add_wave {{/ann_tb/dut/a_dina}} 
+restart
+run 1 us
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top axis_ann_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source axis_ann_tb.tcl
+restart
+run 3 us
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+open_run impl_1
+file copy -force D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/final_project/final_project.runs/impl_1/design_1_wrapper.bit D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/final_project/final_project.bit
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top design_1_wrapper [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+write_bd_tcl -force D:/Kuliah/SEM_7/magang/TUGAS/FInalProject/final_project/final_project.tcl
+close_sim

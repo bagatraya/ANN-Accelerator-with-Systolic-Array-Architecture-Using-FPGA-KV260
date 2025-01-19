@@ -1,0 +1,866 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Dec 17 14:39:02 2024
+# Process ID: 4900
+# Current directory: C:/Users/mtfir/Downloads/final_project/final_project.runs/design_1_axis_ann_0_0_synth_1
+# Command line: vivado.exe -log design_1_axis_ann_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axis_ann_0_0.tcl
+# Log file: C:/Users/mtfir/Downloads/final_project/final_project.runs/design_1_axis_ann_0_0_synth_1/design_1_axis_ann_0_0.vds
+# Journal file: C:/Users/mtfir/Downloads/final_project/final_project.runs/design_1_axis_ann_0_0_synth_1\vivado.jou
+# Running On        :Tegar
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :AMD Ryzen 3 5300U with Radeon Graphics         
+# CPU Frequency     :2595 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :12161 MB
+# Swap memory       :9663 MB
+# Total Virtual     :21825 MB
+# Available Virtual :7424 MB
+#-----------------------------------------------------------
+source design_1_axis_ann_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 515.512 ; gain = 200.055
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+Command: synth_design -top design_1_axis_ann_0_0 -part xck26-sfvc784-2LV-c -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 6948
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1939.113 ; gain = 399.176
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_axis_ann_0_0' [c:/Users/mtfir/Downloads/final_project/final_project.gen/sources_1/bd/design_1/ip/design_1_axis_ann_0_0/synth/design_1_axis_ann_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axis_ann' [C:/Users/mtfir/Downloads/axis_ann.v:1]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_axis' [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2373]
+	Parameter CLOCKING_MODE bound to: common_clock - type: string 
+	Parameter FIFO_MEMORY_TYPE bound to: auto - type: string 
+	Parameter PACKET_FIFO bound to: false - type: string 
+	Parameter FIFO_DEPTH bound to: 256 - type: integer 
+	Parameter TDATA_WIDTH bound to: 128 - type: integer 
+	Parameter TID_WIDTH bound to: 1 - type: integer 
+	Parameter TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter RELATED_CLOCKS bound to: 0 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 0004 - type: string 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 9 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 1 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
+	Parameter CDC_SYNC_STAGES bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (0#1) [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value.   [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:514]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (0#1) [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-226] default block is never used [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1220]
+INFO: [Synth 8-226] default block is never used [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1287]
+INFO: [Synth 8-226] default block is never used [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1309]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_bit' [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1927]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_bit' (0#1) [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1927]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn' [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn' (0#1) [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_rst' [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1639]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst' (0#1) [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1639]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized0' [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized0' (0#1) [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized1' [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized1' (0#1) [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized2' [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized2' (0#1) [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (0#1) [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_axis' (0#1) [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2373]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/mtfir/Downloads/axis_ann.v:136]
+INFO: [Synth 8-6157] synthesizing module 'register' [C:/Users/mtfir/Downloads/register.v:1]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'register' (0#1) [C:/Users/mtfir/Downloads/register.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ann' [C:/Users/mtfir/Downloads/ann.v:1]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_tdpram' [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:9050]
+	Parameter MEMORY_SIZE bound to: 1024 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: auto - type: string 
+	Parameter CLOCKING_MODE bound to: common_clock - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: 0 - type: string 
+	Parameter USE_MEM_INIT bound to: 1 - type: integer 
+	Parameter WAKEUP_TIME bound to: disable_sleep - type: string 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WRITE_DATA_WIDTH_A bound to: 128 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 128 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 3 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter WRITE_MODE_A bound to: write_first - type: string 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 128 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 128 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 3 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: write_first - type: string 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value.   [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:514]
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-2] MEMORY_INIT_FILE (none), MEMORY_INIT_PARAM together specify no memory initialization. Initial memory contents will be all 0's.   [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:516]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized0' (0#1) [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_tdpram' (0#1) [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:9050]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_tdpram__parameterized0' [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:9050]
+	Parameter MEMORY_SIZE bound to: 512 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: auto - type: string 
+	Parameter CLOCKING_MODE bound to: common_clock - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: 0 - type: string 
+	Parameter USE_MEM_INIT bound to: 1 - type: integer 
+	Parameter WAKEUP_TIME bound to: disable_sleep - type: string 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WRITE_DATA_WIDTH_A bound to: 128 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 128 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 2 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter WRITE_MODE_A bound to: write_first - type: string 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 128 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 128 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 2 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: write_first - type: string 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized1' [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value.   [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:514]
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-2] MEMORY_INIT_FILE (none), MEMORY_INIT_PARAM together specify no memory initialization. Initial memory contents will be all 0's.   [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:516]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized1' (0#1) [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_tdpram__parameterized0' (0#1) [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:9050]
+INFO: [Synth 8-6157] synthesizing module 'register__parameterized0' [C:/Users/mtfir/Downloads/register.v:1]
+	Parameter WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'register__parameterized0' (0#1) [C:/Users/mtfir/Downloads/register.v:1]
+INFO: [Synth 8-6157] synthesizing module 'systolic' [C:/Users/mtfir/Downloads/systolic6x6.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sys1x6' [C:/Users/mtfir/Downloads/systolic1x6.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sys1x1' [C:/Users/mtfir/Downloads/systolic1x1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'register__parameterized1' [C:/Users/mtfir/Downloads/register.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register__parameterized1' (0#1) [C:/Users/mtfir/Downloads/register.v:1]
+INFO: [Synth 8-6157] synthesizing module 'pe' [C:/Users/mtfir/Downloads/pe.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pe' (0#1) [C:/Users/mtfir/Downloads/pe.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'sys1x1' (0#1) [C:/Users/mtfir/Downloads/systolic1x1.v:23]
+WARNING: [Synth 8-689] width (17) of port connection 'a_out' does not match port width (16) of module 'sys1x1' [C:/Users/mtfir/Downloads/systolic1x6.v:40]
+WARNING: [Synth 8-689] width (17) of port connection 'a' does not match port width (16) of module 'sys1x1' [C:/Users/mtfir/Downloads/systolic1x6.v:50]
+WARNING: [Synth 8-689] width (17) of port connection 'a_out' does not match port width (16) of module 'sys1x1' [C:/Users/mtfir/Downloads/systolic1x6.v:53]
+WARNING: [Synth 8-689] width (17) of port connection 'a' does not match port width (16) of module 'sys1x1' [C:/Users/mtfir/Downloads/systolic1x6.v:63]
+WARNING: [Synth 8-689] width (17) of port connection 'a_out' does not match port width (16) of module 'sys1x1' [C:/Users/mtfir/Downloads/systolic1x6.v:66]
+WARNING: [Synth 8-689] width (17) of port connection 'a' does not match port width (16) of module 'sys1x1' [C:/Users/mtfir/Downloads/systolic1x6.v:76]
+WARNING: [Synth 8-689] width (17) of port connection 'a_out' does not match port width (16) of module 'sys1x1' [C:/Users/mtfir/Downloads/systolic1x6.v:79]
+WARNING: [Synth 8-689] width (17) of port connection 'a' does not match port width (16) of module 'sys1x1' [C:/Users/mtfir/Downloads/systolic1x6.v:89]
+WARNING: [Synth 8-689] width (17) of port connection 'a_out' does not match port width (16) of module 'sys1x1' [C:/Users/mtfir/Downloads/systolic1x6.v:92]
+WARNING: [Synth 8-689] width (17) of port connection 'a' does not match port width (16) of module 'sys1x1' [C:/Users/mtfir/Downloads/systolic1x6.v:102]
+WARNING: [Synth 8-689] width (17) of port connection 'a_out' does not match port width (16) of module 'sys1x1' [C:/Users/mtfir/Downloads/systolic1x6.v:105]
+INFO: [Synth 8-6155] done synthesizing module 'sys1x6' (0#1) [C:/Users/mtfir/Downloads/systolic1x6.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'systolic' (0#1) [C:/Users/mtfir/Downloads/systolic6x6.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sigmoid' [C:/Users/mtfir/Downloads/sigmoid.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'sigmoid' (0#1) [C:/Users/mtfir/Downloads/sigmoid.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'ann' (0#1) [C:/Users/mtfir/Downloads/ann.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'axis_ann' (0#1) [C:/Users/mtfir/Downloads/axis_ann.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axis_ann_0_0' (0#1) [c:/Users/mtfir/Downloads/final_project/final_project.gen/sources_1/bd/design_1/ip/design_1_axis_ann_0_0/synth/design_1_axis_ann_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3077]
+WARNING: [Synth 8-6014] Unused sequential element gdvld.data_valid_std_reg was removed.  [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:550]
+WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1404]
+WARNING: [Synth 8-7129] Port rd_clk in module xpm_fifo_rst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sleep in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rsta in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regcea in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectsbiterra in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectdbiterra in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clkb in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[163] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[162] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[161] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[160] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[159] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[158] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[157] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[156] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[155] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[154] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[153] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[152] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[151] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[150] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[149] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[148] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[147] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[146] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[145] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[144] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[143] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[142] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[141] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[140] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[139] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[138] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[137] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[136] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[135] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[134] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[133] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[132] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[131] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[130] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[129] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[128] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[127] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[126] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[125] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[124] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[123] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[122] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[121] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[120] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[119] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[118] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[117] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[116] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[115] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[114] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[113] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[112] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[111] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[110] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[109] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[108] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[107] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[106] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[105] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[104] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[103] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[102] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[101] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[100] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[99] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[98] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[97] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[96] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[95] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[94] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[93] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[92] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[91] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[90] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[89] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[88] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[87] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[86] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[85] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[84] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[83] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[82] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[81] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[80] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[79] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[78] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[77] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[76] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[75] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[74] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[73] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[72] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[71] in module xpm_memory_base is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2088.105 ; gain = 548.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 2088.105 ; gain = 548.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 2088.105 ; gain = 548.168
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.283 . Memory (MB): peak = 2088.105 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst_axis.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_axis_ann_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_axis_ann_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_axis_ann_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_axis_ann_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 7 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2178.777 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.085 . Memory (MB): peak = 2196.707 ; gain = 17.918
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 2196.707 ; gain = 656.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 2196.707 ; gain = 656.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_fifo_axis_0/\gaxis_rst_sync.xpm_cdc_sync_rst_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_fifo_axis_1/\gaxis_rst_sync.xpm_cdc_sync_rst_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_fifo_axis_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_fifo_axis_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ann_0/xpm_memory_tdpram_wb. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ann_0/xpm_memory_tdpram_a. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ann_0/xpm_memory_tdpram_k. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 2196.707 ; gain = 656.770
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base'
+INFO: [Synth 8-3971] The signal "xpm_memory_base__parameterized0:/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "xpm_memory_base__parameterized1:/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 2196.707 ; gain = 656.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 36    
+	   4 Input    9 Bit       Adders := 6     
+	   4 Input    8 Bit       Adders := 6     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
+	   4 Input    2 Bit       Adders := 2     
++---Registers : 
+	              164 Bit    Registers := 4     
+	               16 Bit    Registers := 174   
+	                9 Bit    Registers := 6     
+	                8 Bit    Registers := 102   
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 41    
++---RAMs : 
+	              41K Bit	(256 X 164 bit)          RAMs := 2     
+	             1024 Bit	(8 X 128 bit)          RAMs := 1     
+	              512 Bit	(4 X 128 bit)          RAMs := 2     
++---Muxes : 
+	   2 Input  128 Bit        Muxes := 96    
+	   2 Input   16 Bit        Muxes := 74    
+	   2 Input    8 Bit        Muxes := 96    
+	   3 Input    8 Bit        Muxes := 6     
+	   2 Input    3 Bit        Muxes := 4     
+	   8 Input    3 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 69    
+	   4 Input    2 Bit        Muxes := 14    
+	   3 Input    2 Bit        Muxes := 5     
+	   5 Input    2 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 23    
+	   7 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP sys6_5/sys1_a/PEa/y_out_i, operation Mode is: A2*B.
+DSP Report: register sys6_5/sys1_a/a_reg/q_reg is absorbed into DSP sys6_5/sys1_a/PEa/y_out_i.
+DSP Report: operator sys6_5/sys1_a/PEa/y_out_i is absorbed into DSP sys6_5/sys1_a/PEa/y_out_i.
+DSP Report: Generating DSP sys6_4/sys1_a/PEa/y_out_i, operation Mode is: A2*B.
+DSP Report: register sys6_4/sys1_a/a_reg/q_reg is absorbed into DSP sys6_4/sys1_a/PEa/y_out_i.
+DSP Report: operator sys6_4/sys1_a/PEa/y_out_i is absorbed into DSP sys6_4/sys1_a/PEa/y_out_i.
+DSP Report: Generating DSP sys6_3/sys1_a/PEa/y_out_i, operation Mode is: A2*B.
+DSP Report: register sys6_3/sys1_a/a_reg/q_reg is absorbed into DSP sys6_3/sys1_a/PEa/y_out_i.
+DSP Report: operator sys6_3/sys1_a/PEa/y_out_i is absorbed into DSP sys6_3/sys1_a/PEa/y_out_i.
+DSP Report: Generating DSP sys6_2/sys1_a/PEa/y_out_i, operation Mode is: A2*B.
+DSP Report: register sys6_2/sys1_a/a_reg/q_reg is absorbed into DSP sys6_2/sys1_a/PEa/y_out_i.
+DSP Report: operator sys6_2/sys1_a/PEa/y_out_i is absorbed into DSP sys6_2/sys1_a/PEa/y_out_i.
+DSP Report: Generating DSP sys6_1/sys1_a/PEa/y_out_i, operation Mode is: A2*B.
+DSP Report: register sys6_1/sys1_a/a_reg/q_reg is absorbed into DSP sys6_1/sys1_a/PEa/y_out_i.
+DSP Report: operator sys6_1/sys1_a/PEa/y_out_i is absorbed into DSP sys6_1/sys1_a/PEa/y_out_i.
+DSP Report: Generating DSP sys6_0/sys1_a/PEa/y_out_i, operation Mode is: A2*B.
+DSP Report: register sys6_0/sys1_a/a_reg/q_reg is absorbed into DSP sys6_0/sys1_a/PEa/y_out_i.
+DSP Report: operator sys6_0/sys1_a/PEa/y_out_i is absorbed into DSP sys6_0/sys1_a/PEa/y_out_i.
+DSP Report: Generating DSP sys6_5/sys1_b/PEa/y_out_i, operation Mode is: ACIN2*B.
+DSP Report: register sys6_5/sys1_b/a_reg/q_reg is absorbed into DSP sys6_5/sys1_b/PEa/y_out_i.
+DSP Report: operator sys6_5/sys1_b/PEa/y_out_i is absorbed into DSP sys6_5/sys1_b/PEa/y_out_i.
+DSP Report: Generating DSP sys6_4/sys1_b/PEa/y_out_i, operation Mode is: ACIN2*B.
+DSP Report: register sys6_4/sys1_b/a_reg/q_reg is absorbed into DSP sys6_4/sys1_b/PEa/y_out_i.
+DSP Report: operator sys6_4/sys1_b/PEa/y_out_i is absorbed into DSP sys6_4/sys1_b/PEa/y_out_i.
+DSP Report: Generating DSP sys6_3/sys1_b/PEa/y_out_i, operation Mode is: ACIN2*B.
+DSP Report: register sys6_3/sys1_b/a_reg/q_reg is absorbed into DSP sys6_3/sys1_b/PEa/y_out_i.
+DSP Report: operator sys6_3/sys1_b/PEa/y_out_i is absorbed into DSP sys6_3/sys1_b/PEa/y_out_i.
+DSP Report: Generating DSP sys6_2/sys1_b/PEa/y_out_i, operation Mode is: ACIN2*B.
+DSP Report: register sys6_2/sys1_b/a_reg/q_reg is absorbed into DSP sys6_2/sys1_b/PEa/y_out_i.
+DSP Report: operator sys6_2/sys1_b/PEa/y_out_i is absorbed into DSP sys6_2/sys1_b/PEa/y_out_i.
+DSP Report: Generating DSP sys6_1/sys1_b/PEa/y_out_i, operation Mode is: A2*B.
+DSP Report: register sys6_1/sys1_b/a_reg/q_reg is absorbed into DSP sys6_1/sys1_b/PEa/y_out_i.
+DSP Report: operator sys6_1/sys1_b/PEa/y_out_i is absorbed into DSP sys6_1/sys1_b/PEa/y_out_i.
+DSP Report: Generating DSP sys6_0/sys1_b/PEa/y_out_i, operation Mode is: A2*B.
+DSP Report: register sys6_0/sys1_b/a_reg/q_reg is absorbed into DSP sys6_0/sys1_b/PEa/y_out_i.
+DSP Report: operator sys6_0/sys1_b/PEa/y_out_i is absorbed into DSP sys6_0/sys1_b/PEa/y_out_i.
+DSP Report: Generating DSP sys6_5/sys1_c/PEa/y_out_i, operation Mode is: ACIN2*B.
+DSP Report: register sys6_5/sys1_c/a_reg/q_reg is absorbed into DSP sys6_5/sys1_c/PEa/y_out_i.
+DSP Report: operator sys6_5/sys1_c/PEa/y_out_i is absorbed into DSP sys6_5/sys1_c/PEa/y_out_i.
+DSP Report: Generating DSP sys6_4/sys1_c/PEa/y_out_i, operation Mode is: ACIN2*B.
+DSP Report: register sys6_4/sys1_c/a_reg/q_reg is absorbed into DSP sys6_4/sys1_c/PEa/y_out_i.
+DSP Report: operator sys6_4/sys1_c/PEa/y_out_i is absorbed into DSP sys6_4/sys1_c/PEa/y_out_i.
+DSP Report: Generating DSP sys6_3/sys1_c/PEa/y_out_i, operation Mode is: ACIN2*B.
+DSP Report: register sys6_3/sys1_c/a_reg/q_reg is absorbed into DSP sys6_3/sys1_c/PEa/y_out_i.
+DSP Report: operator sys6_3/sys1_c/PEa/y_out_i is absorbed into DSP sys6_3/sys1_c/PEa/y_out_i.
+DSP Report: Generating DSP sys6_2/sys1_c/PEa/y_out_i, operation Mode is: ACIN2*B.
+DSP Report: register sys6_2/sys1_c/a_reg/q_reg is absorbed into DSP sys6_2/sys1_c/PEa/y_out_i.
+DSP Report: operator sys6_2/sys1_c/PEa/y_out_i is absorbed into DSP sys6_2/sys1_c/PEa/y_out_i.
+DSP Report: Generating DSP sys6_1/sys1_c/PEa/y_out_i, operation Mode is: ACIN2*B.
+DSP Report: register sys6_1/sys1_c/a_reg/q_reg is absorbed into DSP sys6_1/sys1_c/PEa/y_out_i.
+DSP Report: operator sys6_1/sys1_c/PEa/y_out_i is absorbed into DSP sys6_1/sys1_c/PEa/y_out_i.
+DSP Report: Generating DSP sys6_0/sys1_c/PEa/y_out_i, operation Mode is: A2*B.
+DSP Report: register sys6_0/sys1_c/a_reg/q_reg is absorbed into DSP sys6_0/sys1_c/PEa/y_out_i.
+DSP Report: operator sys6_0/sys1_c/PEa/y_out_i is absorbed into DSP sys6_0/sys1_c/PEa/y_out_i.
+DSP Report: Generating DSP sys6_5/sys1_d/PEa/y_out_i, operation Mode is: ACIN2*B.
+DSP Report: register sys6_5/sys1_d/a_reg/q_reg is absorbed into DSP sys6_5/sys1_d/PEa/y_out_i.
+DSP Report: operator sys6_5/sys1_d/PEa/y_out_i is absorbed into DSP sys6_5/sys1_d/PEa/y_out_i.
+DSP Report: Generating DSP sys6_4/sys1_d/PEa/y_out_i, operation Mode is: ACIN2*B.
+DSP Report: register sys6_4/sys1_d/a_reg/q_reg is absorbed into DSP sys6_4/sys1_d/PEa/y_out_i.
+DSP Report: operator sys6_4/sys1_d/PEa/y_out_i is absorbed into DSP sys6_4/sys1_d/PEa/y_out_i.
+DSP Report: Generating DSP sys6_3/sys1_d/PEa/y_out_i, operation Mode is: ACIN2*B.
+DSP Report: register sys6_3/sys1_d/a_reg/q_reg is absorbed into DSP sys6_3/sys1_d/PEa/y_out_i.
+DSP Report: operator sys6_3/sys1_d/PEa/y_out_i is absorbed into DSP sys6_3/sys1_d/PEa/y_out_i.
+DSP Report: Generating DSP sys6_2/sys1_d/PEa/y_out_i, operation Mode is: ACIN2*B.
+DSP Report: register sys6_2/sys1_d/a_reg/q_reg is absorbed into DSP sys6_2/sys1_d/PEa/y_out_i.
+DSP Report: operator sys6_2/sys1_d/PEa/y_out_i is absorbed into DSP sys6_2/sys1_d/PEa/y_out_i.
+DSP Report: Generating DSP sys6_1/sys1_d/PEa/y_out_i, operation Mode is: ACIN2*B.
+DSP Report: register sys6_1/sys1_d/a_reg/q_reg is absorbed into DSP sys6_1/sys1_d/PEa/y_out_i.
+DSP Report: operator sys6_1/sys1_d/PEa/y_out_i is absorbed into DSP sys6_1/sys1_d/PEa/y_out_i.
+DSP Report: Generating DSP sys6_0/sys1_d/PEa/y_out_i, operation Mode is: ACIN2*B.
+DSP Report: register sys6_0/sys1_d/a_reg/q_reg is absorbed into DSP sys6_0/sys1_d/PEa/y_out_i.
+DSP Report: operator sys6_0/sys1_d/PEa/y_out_i is absorbed into DSP sys6_0/sys1_d/PEa/y_out_i.
+DSP Report: Generating DSP sys6_5/sys1_e/PEa/y_out_i, operation Mode is: ACIN2*B.
+DSP Report: register sys6_5/sys1_e/a_reg/q_reg is absorbed into DSP sys6_5/sys1_e/PEa/y_out_i.
+DSP Report: operator sys6_5/sys1_e/PEa/y_out_i is absorbed into DSP sys6_5/sys1_e/PEa/y_out_i.
+DSP Report: Generating DSP sys6_4/sys1_e/PEa/y_out_i, operation Mode is: ACIN2*B.
+DSP Report: register sys6_4/sys1_e/a_reg/q_reg is absorbed into DSP sys6_4/sys1_e/PEa/y_out_i.
+DSP Report: operator sys6_4/sys1_e/PEa/y_out_i is absorbed into DSP sys6_4/sys1_e/PEa/y_out_i.
+DSP Report: Generating DSP sys6_3/sys1_e/PEa/y_out_i, operation Mode is: ACIN2*B.
+DSP Report: register sys6_3/sys1_e/a_reg/q_reg is absorbed into DSP sys6_3/sys1_e/PEa/y_out_i.
+DSP Report: operator sys6_3/sys1_e/PEa/y_out_i is absorbed into DSP sys6_3/sys1_e/PEa/y_out_i.
+DSP Report: Generating DSP sys6_2/sys1_e/PEa/y_out_i, operation Mode is: ACIN2*B.
+DSP Report: register sys6_2/sys1_e/a_reg/q_reg is absorbed into DSP sys6_2/sys1_e/PEa/y_out_i.
+DSP Report: operator sys6_2/sys1_e/PEa/y_out_i is absorbed into DSP sys6_2/sys1_e/PEa/y_out_i.
+DSP Report: Generating DSP sys6_1/sys1_e/PEa/y_out_i, operation Mode is: ACIN2*B.
+DSP Report: register sys6_1/sys1_e/a_reg/q_reg is absorbed into DSP sys6_1/sys1_e/PEa/y_out_i.
+DSP Report: operator sys6_1/sys1_e/PEa/y_out_i is absorbed into DSP sys6_1/sys1_e/PEa/y_out_i.
+DSP Report: Generating DSP sys6_0/sys1_e/PEa/y_out_i, operation Mode is: ACIN2*B.
+DSP Report: register sys6_0/sys1_e/a_reg/q_reg is absorbed into DSP sys6_0/sys1_e/PEa/y_out_i.
+DSP Report: operator sys6_0/sys1_e/PEa/y_out_i is absorbed into DSP sys6_0/sys1_e/PEa/y_out_i.
+DSP Report: Generating DSP sys6_5/sys1_f/PEa/y_out_i, operation Mode is: ACIN2*B.
+DSP Report: register sys6_5/sys1_f/a_reg/q_reg is absorbed into DSP sys6_5/sys1_f/PEa/y_out_i.
+DSP Report: operator sys6_5/sys1_f/PEa/y_out_i is absorbed into DSP sys6_5/sys1_f/PEa/y_out_i.
+DSP Report: Generating DSP sys6_4/sys1_f/PEa/y_out_i, operation Mode is: ACIN2*B.
+DSP Report: register sys6_4/sys1_f/a_reg/q_reg is absorbed into DSP sys6_4/sys1_f/PEa/y_out_i.
+DSP Report: operator sys6_4/sys1_f/PEa/y_out_i is absorbed into DSP sys6_4/sys1_f/PEa/y_out_i.
+DSP Report: Generating DSP sys6_3/sys1_f/PEa/y_out_i, operation Mode is: ACIN2*B.
+DSP Report: register sys6_3/sys1_f/a_reg/q_reg is absorbed into DSP sys6_3/sys1_f/PEa/y_out_i.
+DSP Report: operator sys6_3/sys1_f/PEa/y_out_i is absorbed into DSP sys6_3/sys1_f/PEa/y_out_i.
+DSP Report: Generating DSP sys6_2/sys1_f/PEa/y_out_i, operation Mode is: ACIN2*B.
+DSP Report: register sys6_2/sys1_f/a_reg/q_reg is absorbed into DSP sys6_2/sys1_f/PEa/y_out_i.
+DSP Report: operator sys6_2/sys1_f/PEa/y_out_i is absorbed into DSP sys6_2/sys1_f/PEa/y_out_i.
+DSP Report: Generating DSP sys6_1/sys1_f/PEa/y_out_i, operation Mode is: ACIN2*B.
+DSP Report: register sys6_1/sys1_f/a_reg/q_reg is absorbed into DSP sys6_1/sys1_f/PEa/y_out_i.
+DSP Report: operator sys6_1/sys1_f/PEa/y_out_i is absorbed into DSP sys6_1/sys1_f/PEa/y_out_i.
+DSP Report: Generating DSP sys6_0/sys1_f/PEa/y_out_i, operation Mode is: ACIN2*B.
+DSP Report: register sys6_0/sys1_f/a_reg/q_reg is absorbed into DSP sys6_0/sys1_f/PEa/y_out_i.
+DSP Report: operator sys6_0/sys1_f/PEa/y_out_i is absorbed into DSP sys6_0/sys1_f/PEa/y_out_i.
+RAM ("xpm_fifo_base:/\gen_sdpram.xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg") is too shallow (depth = 256) to use URAM. Choosing BRAM instead of URAM 
+INFO: [Synth 8-6851] RAM (gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg) has partial Byte Wide Write Enable pattern, however no output register found in fanout of RAM. Recommended to use supported Byte Wide Write Enable template. 
+INFO: [Synth 8-6851] RAM (gen_wr_a.gen_byte_narrow.for_mem_cols[1].mem_reg) has partial Byte Wide Write Enable pattern, however no output register found in fanout of RAM. Recommended to use supported Byte Wide Write Enable template. 
+INFO: [Synth 8-6851] RAM (gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg) has partial Byte Wide Write Enable pattern, however no output register found in fanout of RAM. Recommended to use supported Byte Wide Write Enable template. 
+INFO: [Synth 8-6851] RAM (gen_wr_a.gen_byte_narrow.for_mem_cols[1].mem_reg) has partial Byte Wide Write Enable pattern, however no output register found in fanout of RAM. Recommended to use supported Byte Wide Write Enable template. 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:45 . Memory (MB): peak = 2196.707 ; gain = 656.770
+---------------------------------------------------------------------------------
+ Sort Area is  sys6_2/sys1_a/PEa/y_out_i_3 : 0 0 : 1953 11718 : Used 1 time 0
+ Sort Area is  sys6_2/sys1_a/PEa/y_out_i_3 : 0 1 : 1953 11718 : Used 1 time 0
+ Sort Area is  sys6_2/sys1_a/PEa/y_out_i_3 : 0 2 : 1953 11718 : Used 1 time 0
+ Sort Area is  sys6_2/sys1_a/PEa/y_out_i_3 : 0 3 : 1953 11718 : Used 1 time 0
+ Sort Area is  sys6_2/sys1_a/PEa/y_out_i_3 : 0 4 : 1953 11718 : Used 1 time 0
+ Sort Area is  sys6_2/sys1_a/PEa/y_out_i_3 : 0 5 : 1953 11718 : Used 1 time 0
+ Sort Area is  sys6_3/sys1_a/PEa/y_out_i_4 : 0 0 : 1953 11718 : Used 1 time 0
+ Sort Area is  sys6_3/sys1_a/PEa/y_out_i_4 : 0 1 : 1953 11718 : Used 1 time 0
+ Sort Area is  sys6_3/sys1_a/PEa/y_out_i_4 : 0 2 : 1953 11718 : Used 1 time 0
+ Sort Area is  sys6_3/sys1_a/PEa/y_out_i_4 : 0 3 : 1953 11718 : Used 1 time 0
+ Sort Area is  sys6_3/sys1_a/PEa/y_out_i_4 : 0 4 : 1953 11718 : Used 1 time 0
+ Sort Area is  sys6_3/sys1_a/PEa/y_out_i_4 : 0 5 : 1953 11718 : Used 1 time 0
+ Sort Area is  sys6_4/sys1_a/PEa/y_out_i_5 : 0 0 : 1953 11718 : Used 1 time 0
+ Sort Area is  sys6_4/sys1_a/PEa/y_out_i_5 : 0 1 : 1953 11718 : Used 1 time 0
+ Sort Area is  sys6_4/sys1_a/PEa/y_out_i_5 : 0 2 : 1953 11718 : Used 1 time 0
+ Sort Area is  sys6_4/sys1_a/PEa/y_out_i_5 : 0 3 : 1953 11718 : Used 1 time 0
+ Sort Area is  sys6_4/sys1_a/PEa/y_out_i_5 : 0 4 : 1953 11718 : Used 1 time 0
+ Sort Area is  sys6_4/sys1_a/PEa/y_out_i_5 : 0 5 : 1953 11718 : Used 1 time 0
+ Sort Area is  sys6_5/sys1_a/PEa/y_out_i_6 : 0 0 : 1953 11718 : Used 1 time 0
+ Sort Area is  sys6_5/sys1_a/PEa/y_out_i_6 : 0 1 : 1953 11718 : Used 1 time 0
+ Sort Area is  sys6_5/sys1_a/PEa/y_out_i_6 : 0 2 : 1953 11718 : Used 1 time 0
+ Sort Area is  sys6_5/sys1_a/PEa/y_out_i_6 : 0 3 : 1953 11718 : Used 1 time 0
+ Sort Area is  sys6_5/sys1_a/PEa/y_out_i_6 : 0 4 : 1953 11718 : Used 1 time 0
+ Sort Area is  sys6_5/sys1_a/PEa/y_out_i_6 : 0 5 : 1953 11718 : Used 1 time 0
+ Sort Area is  sys6_1/sys1_b/PEa/y_out_i_8 : 0 0 : 1953 9765 : Used 1 time 0
+ Sort Area is  sys6_1/sys1_b/PEa/y_out_i_8 : 0 1 : 1953 9765 : Used 1 time 0
+ Sort Area is  sys6_1/sys1_b/PEa/y_out_i_8 : 0 2 : 1953 9765 : Used 1 time 0
+ Sort Area is  sys6_1/sys1_b/PEa/y_out_i_8 : 0 3 : 1953 9765 : Used 1 time 0
+ Sort Area is  sys6_1/sys1_b/PEa/y_out_i_8 : 0 4 : 1953 9765 : Used 1 time 0
+ Sort Area is  sys6_0/sys1_c/PEa/y_out_i_9 : 0 0 : 1953 7812 : Used 1 time 0
+ Sort Area is  sys6_0/sys1_c/PEa/y_out_i_9 : 0 1 : 1953 7812 : Used 1 time 0
+ Sort Area is  sys6_0/sys1_c/PEa/y_out_i_9 : 0 2 : 1953 7812 : Used 1 time 0
+ Sort Area is  sys6_0/sys1_c/PEa/y_out_i_9 : 0 3 : 1953 7812 : Used 1 time 0
+ Sort Area is  sys6_0/sys1_a/PEa/y_out_i_0 : 0 0 : 1953 1953 : Used 1 time 0
+ Sort Area is  sys6_0/sys1_b/PEa/y_out_i_7 : 0 0 : 1953 1953 : Used 1 time 0
+ Sort Area is  sys6_1/sys1_a/PEa/y_out_i_2 : 0 0 : 1953 1953 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|sigmoid     | mem        | 256x25        | LUT            | 
+|sigmoid     | p_0_out    | 256x25        | LUT            | 
+|sigmoid     | p_0_out    | 256x25        | LUT            | 
+|sigmoid     | p_0_out    | 256x25        | LUT            | 
++------------+------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping Report (see note below)
++-------------------------------------------------+--------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                                      | RTL Object                                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++-------------------------------------------------+--------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|xpm_fifo_base:/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg                 | 256 x 164(READ_FIRST)  | W |   | 256 x 164(WRITE_FIRST) |   | R | Port A and B     | 1      | 2      |                 | 
+|xpm_memory_base__parameterized0:                 | gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg | 8 x 128(WRITE_FIRST)   | W | R | 8 x 128(WRITE_FIRST)   | W | R | Port A and B     | 0      | 4      |                 | 
+|xpm_memory_base__parameterized1:                 | gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg | 4 x 128(WRITE_FIRST)   | W | R | 4 x 128(WRITE_FIRST)   | W | R | Port A and B     | 0      | 4      |                 | 
+|xpm_memory_base__parameterized1:                 | gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg | 4 x 128(WRITE_FIRST)   | W | R | 4 x 128(WRITE_FIRST)   | W | R | Port A and B     | 0      | 4      |                 | 
+|xpm_fifo_base:/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg                 | 256 x 164(READ_FIRST)  | W |   | 256 x 164(WRITE_FIRST) |   | R | Port A and B     | 1      | 2      |                 | 
++-------------------------------------------------+--------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|systolic    | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|systolic    | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|systolic    | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|systolic    | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|systolic    | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|systolic    | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|systolic    | ACIN2*B     | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|systolic    | ACIN2*B     | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|systolic    | ACIN2*B     | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|systolic    | ACIN2*B     | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|systolic    | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|systolic    | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|systolic    | ACIN2*B     | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|systolic    | ACIN2*B     | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|systolic    | ACIN2*B     | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|systolic    | ACIN2*B     | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|systolic    | ACIN2*B     | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|systolic    | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|systolic    | ACIN2*B     | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|systolic    | ACIN2*B     | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|systolic    | ACIN2*B     | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|systolic    | ACIN2*B     | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|systolic    | ACIN2*B     | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|systolic    | ACIN2*B     | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|systolic    | ACIN2*B     | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|systolic    | ACIN2*B     | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|systolic    | ACIN2*B     | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|systolic    | ACIN2*B     | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|systolic    | ACIN2*B     | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|systolic    | ACIN2*B     | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|systolic    | ACIN2*B     | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|systolic    | ACIN2*B     | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|systolic    | ACIN2*B     | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|systolic    | ACIN2*B     | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|systolic    | ACIN2*B     | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|systolic    | ACIN2*B     | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:01:02 . Memory (MB): peak = 2605.602 ; gain = 1065.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:01:03 . Memory (MB): peak = 2606.168 ; gain = 1066.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++-------------------------------------------------+--------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                                      | RTL Object                                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++-------------------------------------------------+--------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|xpm_fifo_base:/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg                 | 256 x 164(READ_FIRST)  | W |   | 256 x 164(WRITE_FIRST) |   | R | Port A and B     | 1      | 2      |                 | 
+|xpm_memory_base__parameterized0:                 | gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg | 8 x 128(WRITE_FIRST)   | W | R | 8 x 128(WRITE_FIRST)   | W | R | Port A and B     | 0      | 4      |                 | 
+|xpm_memory_base__parameterized1:                 | gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg | 4 x 128(WRITE_FIRST)   | W | R | 4 x 128(WRITE_FIRST)   | W | R | Port A and B     | 0      | 4      |                 | 
+|xpm_memory_base__parameterized1:                 | gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg | 4 x 128(WRITE_FIRST)   | W | R | 4 x 128(WRITE_FIRST)   | W | R | Port A and B     | 0      | 4      |                 | 
+|xpm_fifo_base:/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg                 | 256 x 164(READ_FIRST)  | W |   | 256 x 164(WRITE_FIRST) |   | R | Port A and B     | 1      | 2      |                 | 
++-------------------------------------------------+--------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/xpm_fifo_axis_0/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ann_0/xpm_memory_tdpram_wb/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ann_0/xpm_memory_tdpram_wb/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ann_0/xpm_memory_tdpram_wb/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ann_0/xpm_memory_tdpram_k/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ann_0/xpm_memory_tdpram_k/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ann_0/xpm_memory_tdpram_k/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ann_0/xpm_memory_tdpram_a/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ann_0/xpm_memory_tdpram_a/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ann_0/xpm_memory_tdpram_a/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ann_0/xpm_memory_tdpram_a/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:01:07 . Memory (MB): peak = 2762.797 ; gain = 1222.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:53 ; elapsed = 00:01:13 . Memory (MB): peak = 2776.609 ; gain = 1236.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:53 ; elapsed = 00:01:13 . Memory (MB): peak = 2776.609 ; gain = 1236.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:54 ; elapsed = 00:01:15 . Memory (MB): peak = 2776.609 ; gain = 1236.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:54 ; elapsed = 00:01:15 . Memory (MB): peak = 2776.609 ; gain = 1236.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:54 ; elapsed = 00:01:15 . Memory (MB): peak = 2776.609 ; gain = 1236.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:54 ; elapsed = 00:01:15 . Memory (MB): peak = 2776.609 ; gain = 1236.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++----------------------+-----------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name           | RTL Name                                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++----------------------+-----------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|design_1_axis_ann_0_0 | inst/ann_0/systolic_0/a5_reg4/q_reg[15] | 5      | 16    | YES          | NO                 | YES               | 16     | 0       | 
+|design_1_axis_ann_0_0 | inst/ann_0/systolic_0/a4_reg3/q_reg[15] | 4      | 16    | YES          | NO                 | YES               | 16     | 0       | 
+|design_1_axis_ann_0_0 | inst/ann_0/systolic_0/y0_reg/q_reg[15]  | 7      | 10    | YES          | NO                 | YES               | 10     | 0       | 
+|design_1_axis_ann_0_0 | inst/ann_0/systolic_0/y1_reg/q_reg[15]  | 6      | 10    | YES          | NO                 | YES               | 10     | 0       | 
+|design_1_axis_ann_0_0 | inst/ann_0/systolic_0/y2_reg/q_reg[15]  | 5      | 10    | YES          | NO                 | YES               | 10     | 0       | 
+|design_1_axis_ann_0_0 | inst/ann_0/systolic_0/y3_reg/q_reg[15]  | 4      | 10    | YES          | NO                 | YES               | 10     | 0       | 
+|design_1_axis_ann_0_0 | inst/ann_0/reg_sig_03/q_reg[9]          | 4      | 10    | YES          | NO                 | YES               | 10     | 0       | 
+|design_1_axis_ann_0_0 | inst/ann_0/reg_sig_13/q_reg[9]          | 4      | 10    | YES          | NO                 | YES               | 10     | 0       | 
+|design_1_axis_ann_0_0 | inst/ann_0/reg_sig_23/q_reg[9]          | 4      | 10    | YES          | NO                 | YES               | 10     | 0       | 
+|design_1_axis_ann_0_0 | inst/ann_0/reg_sig_33/q_reg[9]          | 4      | 10    | YES          | NO                 | YES               | 10     | 0       | 
+|design_1_axis_ann_0_0 | inst/ann_0/reg_sig_43/q_reg[9]          | 4      | 10    | YES          | NO                 | YES               | 10     | 0       | 
+|design_1_axis_ann_0_0 | inst/ann_0/reg_sig_53/q_reg[9]          | 4      | 10    | YES          | NO                 | YES               | 10     | 0       | 
++----------------------+-----------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|systolic    | (A'*B')'    | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|systolic    | (A''*B')'   | 30     | 18     | -      | -      | 32     | 2    | 1    | -    | -    | -     | 0    | 1    | 
+|systolic    | (A'*B')'    | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|systolic    | (A'*B')'    | 0      | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|systolic    | (A'*B')'    | 0      | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|systolic    | (A'*B')'    | 0      | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|systolic    | A''*B'      | 30     | 18     | -      | -      | 32     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|systolic    | A'*B'       | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|systolic    | A'*B'       | 0      | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|systolic    | A'*B'       | 0      | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|systolic    | A'*B'       | 0      | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|systolic    | A'*B'       | 0      | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|systolic    | A'*B'       | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|systolic    | A'*B'       | 0      | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|systolic    | A'*B'       | 0      | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|systolic    | A'*B'       | 0      | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|systolic    | A'*B'       | 0      | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|systolic    | A'*B'       | 0      | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|systolic    | A'*B'       | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|systolic    | A'*B'       | 0      | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|systolic    | A'*B'       | 0      | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|systolic    | A'*B'       | 0      | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|systolic    | A'*B'       | 0      | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|systolic    | A'*B'       | 0      | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|systolic    | A'*B'       | 30     | 11     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|systolic    | A'*B'       | 0      | 11     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|systolic    | A'*B'       | 0      | 11     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|systolic    | A'*B'       | 0      | 11     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|systolic    | A'*B'       | 0      | 11     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|systolic    | A'*B'       | 0      | 11     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|systolic    | A'*B'       | 30     | 11     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|systolic    | A'*B'       | 0      | 11     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|systolic    | A'*B'       | 0      | 11     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|systolic    | A'*B'       | 0      | 11     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|systolic    | A'*B'       | 0      | 11     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|systolic    | A'*B'       | 0      | 11     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |CARRY8          |    64|
+|2     |DSP_ALU         |    36|
+|3     |DSP_A_B_DATA    |    36|
+|6     |DSP_C_DATA      |    36|
+|7     |DSP_MULTIPLIER  |    36|
+|8     |DSP_M_DATA      |    36|
+|9     |DSP_OUTPUT      |    36|
+|11    |DSP_PREADD      |    36|
+|12    |DSP_PREADD_DATA |    36|
+|13    |LUT1            |    14|
+|14    |LUT2            |  1016|
+|15    |LUT3            |   268|
+|16    |LUT4            |   154|
+|17    |LUT5            |    63|
+|18    |LUT6            |   258|
+|19    |MUXF7           |    60|
+|20    |MUXF8           |    30|
+|21    |RAMB18E2        |     2|
+|23    |RAMB36E2        |    14|
+|25    |SRL16E          |   132|
+|26    |FDRE            |  1123|
+|27    |FDSE            |    16|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:54 ; elapsed = 00:01:15 . Memory (MB): peak = 2776.609 ; gain = 1236.672
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 194 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:01:11 . Memory (MB): peak = 2776.609 ; gain = 1128.070
+Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:01:16 . Memory (MB): peak = 2776.609 ; gain = 1236.672
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.144 . Memory (MB): peak = 2776.609 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 190 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2776.609 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 36 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 36 instances
+
+Synth Design complete | Checksum: 9f47bb34
+INFO: [Common 17-83] Releasing license: Synthesis
+101 Infos, 115 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:04 ; elapsed = 00:01:30 . Memory (MB): peak = 2776.609 ; gain = 2209.090
+INFO: [Coretcl 2-1174] Renamed 213 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2776.609 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/mtfir/Downloads/final_project/final_project.runs/design_1_axis_ann_0_0_synth_1/design_1_axis_ann_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_axis_ann_0_0_utilization_synth.rpt -pb design_1_axis_ann_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 17 14:40:47 2024...
