@@ -22,4 +22,10 @@ After implementing these changes, the system showed improved synchronization, an
 ## Results
 With the optimizations applied, the FPGA demonstrated significantly **faster execution times** as the number of iterations increased. This confirmed the effectiveness of the systolic array architecture in accelerating ANN computations, offering substantial performance gains for machine learning tasks.
 
+## Documentation
+![Screenshot 2025-01-19 135824](https://github.com/user-attachments/assets/592d3b02-6de7-47eb-9318-a52e3dd3acdb)
+![Screenshot 2025-01-19 135533](https://github.com/user-attachments/assets/7993b579-52ca-47c3-ba4a-83f89d2a3352)
+![Screenshot 2025-01-19 135919](https://github.com/user-attachments/assets/6efeec56-cc65-4202-9505-6d7571eb4e52)
+
+
 
